@@ -2,12 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --dark-purple : #352F43;
+    --break-white: #F7F7F7 ;
 }
 
 body {
-	background-color: #fff;
-	color: #000;
+	background-color: var(--break-white);
+	color: var(--dark-purple);
 	font-family: "Century Gothic", helvetica, arial, sans-serif;
 	font-size: 100%;
 	line-height: 1.5; 
+}
+
+.bg-dark-purple{
+    background-color: var(--dark-purple);
+    color: var(--break-white);
+}
+
+.bg-break-white{
+    background-color: var(--break-white);
+    color: var(--dark-purple);
+}
+
+#copyright{
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.px-10{
+    padding: 0 10rem;
 }
