@@ -12,24 +12,26 @@
 <body>
 
     <header>
-        <nav id="navBar" class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.html">Maison</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#captation">La captation de l'attention</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#donnees">La gestion des données</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#more">Aller plus loin...</a>
-                    </li>
-                </ul>
+       
+        <div id="menu" class="overlay-navigation">
+            <nav role="navigation">
+              <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="#captation" id="captation" data-content="Curious?">La captation de l'attention</a></li>
+                <li><a href="#donnees" id="donnees" >La gestion des données</a></li>
+                <li><a href="#preservation" id="preservation" data-content="Only the finest">Comment vous préserver ?</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+          <section id="menubar" class="home">
+            <div class="open-overlay">
+              <span class="bar-top"></span>
+              <span class="bar-middle"></span>
+              <span class="bar-bottom"></span>
             </div>
-        </nav>
+          </section>
+    
     </header>
 
         <section id="captation" class="px-12 py-5 bg-dark-purple">
@@ -172,7 +174,7 @@
             </article>
         </section>
 
-        <section id="more" class="px-12 bg-dark-purple py-5">
+        <section id="preservation" class="px-12 bg-dark-purple py-5">
             <h2>Aller plus loin</h2>
             <p>Applis pour contrôler le temps passé sur internet ou console vidéo etc</p>
             <p>vérifier url (pour ne pas cliquer sur les concurrents (voir recherche google comme j'aime)</p>
@@ -182,11 +184,12 @@
         </section>
 
     <footer>
-        <p id="copyright">© Laura Quatannens & Léa Sagnier / M1 développement 2021-2022</p>
+        <p class="copyright">© Laura Quatannens & Léa Sagnier / M1 développement 2021-2022</p>
     </footer>
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/jqx-all.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
