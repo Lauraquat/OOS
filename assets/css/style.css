@@ -53,6 +53,7 @@ body {
     border: 0.5px solid var(--dark-purple);
     border-radius: 50px;
 }
+
 #buttonIndex:hover{
     border: 0.5px solid var(--dark-purple);
     background-color: var(--dark-purple);
@@ -63,4 +64,35 @@ body {
     font-size: 0.7rem;
     text-align: center;
     margin-bottom: 0;
+}
+.illu::after{
+    content:url(/assets/img/illu1.svg);
+    position: absolute;
+    width: 5rem;
+    top: 10%;
+    left: 5%;
+}
+.illu::before{
+    content:url(/assets/img/illu1.svg);
+    transform: rotate(180deg);
+    position: absolute;
+    width: 5rem;
+    top: 10%;
+    right: 5%;
+}
+
+#logoEcv{
+    padding: 0.5rem;
+    height: 3rem;
+    display: flex;
+    margin: auto;
+}
+#problematique{
+    padding: 1.5rem 5rem;
+    border-radius: 15px;
+}
+#theme{
+    border-radius: 15px;
+    border: 0.5rem solid var(--dark-purple);
+    padding: 1.5rem 3.7rem;
 }
