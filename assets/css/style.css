@@ -25,8 +25,8 @@ body {
     color: var(--dark-purple);
 }
 
-.px-10{
-    padding: 0 10rem;
+.px-12{
+    padding: 0 12rem;
 }
 
 /*index*/
@@ -87,12 +87,12 @@ body {
     display: flex;
     margin: auto;
 }
-#problematique{
+#sujet{
     padding: 1.5rem 5rem;
     border-radius: 15px;
 }
 #theme{
     border-radius: 15px;
     border: 0.5rem solid var(--dark-purple);
-    padding: 1.5rem 3.7rem;
+    padding: 1.5rem 5rem;
 }
