@@ -32,3 +32,8 @@ $('.open-overlay').click(function() {
       nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
     }
   })
+
+
+/* A mettre en boucle, à peut-être 1 min d'écart */
+var audio = new Audio('./assets/sound/WhatsApp Sound Original Message.mp3');
+audio.play();
