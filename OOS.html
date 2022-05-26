@@ -144,25 +144,63 @@
             <h2>Les données</h2>
             <article id="cookies">
                 <h3>Les cookies</h3>
-                <div class="recup">
-                    <h4>Comment on récupère les informations grâce aux cookies</h4>
+                
+                //TODO  Faire des pop-pup dés qu'on clique sur la partie des cookies avec le contenu des cookies (voir figma)
+                
+                <div class="popup1">
+                    <p>Notre site respecte vos données. Nous utilisons des cookies et des technologies similaires pour faciliter votre navigation, vous fournir nos services, ou encore comprendre comment vous utilisez notre site web afin de pouvoir apporter des améliorations, réaliser des statistiques et, le cas échéant, pour présenter des publicités, y compris des publicités basées sur vos centres d’intérêt, sous réserve du recueil de votre consentement. Des tiers partenaires ont également recours à des cookies en cas d’affichage de publicités.</p>
+                    <button>refuser</button><button>Paramétrer mes choix</button><button>ACCEPTER</button> 
+                    <!--mettre en évidence le bouton accepter. Mettre peut-être le "refuser" en simple lien tout en haut, et le paramétrer en lien en bas... à voir mais faut favoriser l'acceptation.
+                        les choix refuser ou paramétrer amèneront vers une popupOK. En acceptant, on redirige vers "savez vous ce que vous avez accepté?" => popupKO-->
+                </div>
+                <div class="popupOK">
+                    <h4>Félicitations, vous avez eu un bon réflexe !</h4>
+                    <p>Vous avez cliqué sur "Paramétrer mes choix" ou "Tout refuser". Ce choix vous permet de limiter au strict nécessaire les cookies qui seront enregistrés sur votre appareil, et limiter ainsi la transmission de vos données.</p>
+                    <button>Fermer<!--aller à "comment sont récupérées les informations grâce aux cookies"--></button>
+                </div>
+                <div class="popupKO">
+                    <h4>Savez vous ce que vous avez accepté ?</h4>
+                    <p>En cliquant sur "Accepter", vous avez autorisé l'enregistrement de tous les cookies sollicités par le site web. Beaucoup de ces cookies ne sont pas essentiels au bon fonctionnement du site et n'ont pour objectif que de récolter des informations sur vous, vos habitudes de navigation, mais également vos habitudes d'achat.</p>
+                    <button>Fermer<!--aller à "comment sont récupérées les informations grâce aux cookies"--></button>
+                </div>
+                
+                <div>
+                    <h4>Comment sont récupérées les informations grâce aux cookies ?</h4>
+                    <p>Un cookie est un petit fichier texte, qui est stocké par un site web sur votre disque dur lors de la navigation. Cela permet principalement au site web que vous visitez de vous "identifier". Ainsi, quand, plusieurs jours après votre visite, vous revenez sur le même site, celui-ci consultera le cookie, et s'il est encore présent sur votre disque dur, le site web lira les informations contenues dans le cookie et vous "reconnaîtra".
+                        Chaque site web a son propre cookie, ce qui multiplie d'autant le nombre de cookies stockés dans votre ordinateur à la fin de la journée.</p>
+                    <p>Les cookies contiennent des données personnalisées de votre compte, de votre ordinateur. Ce sont donc des données sensibles d'un point de vue sécurité. Ils faut donc les considérer comme des données personnelles que personne ne doit obtenir.
+                        
+                        
+                    <h5>Vol de cookies</h5>
+                        
+                    <p>Le but du hacker, est donc généralement de voler le cookie de sa victime pour en exploiter le contenu.
+                    En théorie, un cookie associé à un site web ne peut pas être envoyé à un autre site web. Malheureusement, un certain nombre de failles permettent de voler des cookies.</p>
+                    
+                    <h6>Vol par accès physique à la machine</h6>
+                    
+                    <p>Si le hacker a accès physiquement à la machine, rien de plus simple que de récupérer les cookies ! Il va dans le répertoire de stockage en fonction du système d'exploitation et copie les cookies sur un support amovible...</p>
+                    
+                    <p>Les hackers possèdent des logiciels qui leur permettent de prendre la main sur la machine en la réinitialisant (et cela, même s'ils n'ont pas les codes ou les droits d'accès). Ils ont donc très facilement accès aux cookies, et donc à vos données personnelles.</p>
+                    
+                    <h6>Vulnérabilité du navigateur</h6>              
+                    
+                    <p>Le navigateur, de plus en plus compliqué à chaque nouvelle version, comporte un nombre de failles impressionnant. Parmi toutes ces failles, il y en a certaines qui concernent tout particulièrement les cookies. C'est le cas par exemple de la faille "zero-day" dont ont été récemment victime les navigateurs utilisant la base Chromium : Chrome et Microsoft Edge</p>
                 </div>
 
-                <div class="protection">
-                    <h4>Comment se protéger contre la récupération de données via les cookies</h4>
-                        <div>Refuser les cookies non essentiels</div>
-                        <div>navigation en mode privé</div>
-                        <div>Saisir l'URL directement plutôt qu'utiliser un moteur de recherche (données de recherche = info)</div>
+                <hr>
+                    <p>Pour se protéger de la transmission (ou du vol) d'informations personnelles via les cookies, une bonne pratique est de les refuser, ou de n'accepter que les cookies essentiels en paramétrant votre choix.</p>
+                    <p>Vous pouvez également naviguer en mode privé. Votre activité ne sera pas enregistrée (cela aura l'avantage de bloquer l'enregistrement de votre activité mais l'inconvénient de ralentir la navigation car les pages seront totalement rechargées.</p>
+                    <p>Enfin, en saisissant l'URL directement plutôt qu'utiliser un moteur de recherche, vous limiterez également l'enregistrement de données. En effet, les données de recherche sont des informations importantes qui permettent de connaitre vos centres d'intérêt</p>
                 </div>
             </article>
 
-            <article id="gps">
-                <h3>Les données GPS</h3>
+            <article id="localisation">
+                <h3>Les données de localisation</h3>
                 <div class="recup">
-                    <h4>Comment on récupère les informations grâce aux données gps</h4>
+                    <h4>Comment sont récupérées les informations grâce aux données de localisation</h4>
                 </div>
                 <div class="protection">
-                    <h4>Comment se protéger contre la récupération de données via le gps</h4>
+                    <h4>Comment se protéger contre la récupération de données via le localisation</h4>
                     <div>désactiver récupération données google (voir lien)</div>
                     <div>Désactiver données et géolocalisation dés qu'on s'en sert pas</div>
                 </div>
@@ -171,7 +209,7 @@
             <article id="formulaires">
                 <h3>Les formulaires</h3>
                 <div class="recup">
-                    <p>Comment on récupère les informations grâce aux formulaires (cases à cocher, etc)</p>
+                    <p>Comment sont récupérées les informations grâce aux formulaires (cases à cocher, etc)</p>
                 </div>
                 <div class="protection">
                     <p>Comment se protéger contre la récupération des données via les formulaires</p>
