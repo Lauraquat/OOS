@@ -1,4 +1,6 @@
-$('.open-overlay').click(function() {
+
+$(document).ready(function(){
+  $('.open-overlay').click(function() {
     var overlay_navigation = $('.overlay-navigation'),
       nav_item_1 = $('nav li:nth-of-type(1)'),
       nav_item_2 = $('nav li:nth-of-type(2)'),
@@ -33,20 +35,29 @@ $('.open-overlay').click(function() {
     }
   })
 
+  $("body").click(function(event){
+    setTimeout(sound(), 90000);
+  });
 
-/* A mettre en boucle, à peut-être 1 min d'écart */
-var audio = new Audio('./assets/sound/WhatsApp Sound Original Message.mp3');
-audio.play();
+})
+
+function sound(){
+  var audio = new Audio('./assets/sound/WhatsApp Sound Original Message.mp3');
+  audio.play();
+}
 
 function hoverModeleDefault(){
   document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_tondeuse.png)';
 }
+
 function hoverModeleF(){
   document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_f.png)';
 }
+
 function hoverModeleFlipper(){
   document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_flipper.png)';
 }
+
 // Show cookies pop up
 // function showCookiesBock(){
 //   document.getElementById('messagecookies').classList.remove('d-none')
