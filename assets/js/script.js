@@ -48,9 +48,9 @@ function hoverModeleFlipper(){
   document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_flipper.png)';
 }
 // Show cookies pop up
-function showCookiesBock(){
-  document.getElementById('messagecookies').classList.remove('d-none')
-}
+// function showCookiesBock(){
+//   document.getElementById('messagecookies').classList.remove('d-none')
+// }
 // Cookie Law 
 
 function setCookie(cookieName, cookieValue, numdaystilexpireasinteger) {
