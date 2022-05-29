@@ -611,3 +611,18 @@ Animation keyframes
   color: var(--break-white);
 }
 
+#messagecookies,
+.modal-dialog {
+  color: var(--dark-purple);
+}
+
+.carousel-item img{
+  height: 400px;
+}
+.w-45{
+  width: 47.5%;
+}
+
+#carouselExampleIndicators{
+  background: var(--dark-purple);
+}

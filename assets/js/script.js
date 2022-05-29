@@ -58,10 +58,7 @@ function hoverModeleFlipper(){
   document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_flipper.png)';
 }
 
-// Show cookies pop up
-// function showCookiesBock(){
-//   document.getElementById('messagecookies').classList.remove('d-none')
-// }
+
 // Cookie Law 
 
 function setCookie(cookieName, cookieValue, numdaystilexpireasinteger) {
@@ -96,3 +93,19 @@ function showLaw() {
       }
   }
 
+// Show cookies pop up
+var message = 0; 
+function showCookiesBock(){
+  if (message == 0) {
+        document.getElementById('messagecookies').classList.remove('d-none');
+        message = 1;
+  }
+}
+
+function closecookieMessage(){
+  document.getElementById('messagecookies').classList.add('d-none')
+}
+
+$('.carousel').carousel({
+  interval: false,
+});
