@@ -456,3 +456,39 @@ Animation keyframes
     width: 15px;
   }
 }
+
+.design-img{
+  width: 100%;
+  height: auto;
+}
+.section p{
+  padding: 1rem;
+  /* border: 1px solid transparent; */
+}
+.section{
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.section-50{
+  width: 45%;
+}
+
+#design-img-block{
+  background-image: url(/assets/img/modele_tondeuse.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#contourBlock{
+  border: #fff solid 1px;
+}
+
+#contourBlock2:hover{
+  border: #fff solid 1px;
+}
+
+#contourBlock2:hover #contourBlock{
+  border: none;
+}
