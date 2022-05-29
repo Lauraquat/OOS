@@ -480,15 +480,45 @@ Animation keyframes
   background-repeat: no-repeat;
   background-size: contain;
 }
+#text-design{
+  display: flex;
+  flex-direction: column;
+}
+.contourBlock{
+  border: #fff solid 1px;
+  order:0;
+}
+.contourBlock2{
+  border: transparent solid 1px;
+  order:1;
+}
+.contourBlock2:hover{
+  border: #fff solid 1px;
+}
+.contourBlock3{
+  border: transparent solid 1px;
+  order:2;
+}
 
-#contourBlock{
+.contourBlock3:hover{
   border: #fff solid 1px;
 }
 
-#contourBlock2:hover{
-  border: #fff solid 1px;
+.contourBlock2:hover ~ .contourBlock, .contourBlock3:hover ~ .contourBlock{
+  border: transparent solid 1px;
 }
 
-#contourBlock2:hover #contourBlock{
-  border: none;
+#design-img-block{
+  position: relative;
+  display: inline-block;
+}
+
+#design-img-block{
+  background-image: url(/assets/img/modele_tondeuse.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#colors img{
+  width: 5%;
 }

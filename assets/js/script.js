@@ -37,3 +37,13 @@ $('.open-overlay').click(function() {
 /* A mettre en boucle, à peut-être 1 min d'écart */
 var audio = new Audio('./assets/sound/WhatsApp Sound Original Message.mp3');
 audio.play();
+
+function hoverModeleDefault(){
+  document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_tondeuse.png)';
+}
+function hoverModeleF(){
+  document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_f.png)';
+}
+function hoverModeleFlipper(){
+  document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_flipper.png)';
+}
