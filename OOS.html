@@ -212,8 +212,8 @@
                     </div>
                 </article>
 
-                <article id="ergonomie">
-                    <h3>L'ergonomie</h3>
+            <article id="captation_technique" >
+                <h3>Quelles sont les techniques de captation ?</h3>
                     <div>
                         <p>Comme nous l'avons évoqué dans la partie captation de l'attention, certains professionnels du numérique utilisent un dark pattern (interface truquée) pour tromper l'utilisateur et l'amener à cliquer sur un autre élément que celui qu'il convoitait.
                         Par exemple, certains boutons peuvent être inversé par rapport aux "conventions" (bouton "annuler" à gauche et "valider" à droite).
@@ -256,9 +256,212 @@
                         Pour se préserver d'une éventuelle dépendance, il existe des applications qui permettent de contrôler le temps passé sur les supports digitaux. Par exemple, Space (ex BreakFree) permet de déterminer un score de dépendance digitale en analysant votre utilisation du téléphone. Elle vous aide ensuite à réduire ce degré d’addiction en vous avertissant lorsqu’elle détecte une utilisation excessive de votre smartphone. Vous pouvez aussi définir des plages horaires où vous souhaitez vous déconnecter.
                         </p>
                     </div>
-                </article>
-            </section>
+            </article>
+        </section>
 
+        <section id="donnees" class="px-12 py-5">
+            <h2>Les données</h2>
+            <article id="donnees_cookies">
+                <h3>Les cookies</h3>
+                
+                //TODO  Faire des pop-pup dés qu'on clique sur la partie des cookies avec le contenu des cookies (voir figma)
+                
+                <div class="donnees_cookies_popup1">
+                    <p>Notre site respecte vos données. Nous utilisons des cookies et des technologies similaires pour faciliter votre navigation, vous fournir nos services, ou encore comprendre comment vous utilisez notre site web afin de pouvoir apporter des améliorations, réaliser des statistiques et, le cas échéant, pour présenter des publicités, y compris des publicités basées sur vos centres d’intérêt, sous réserve du recueil de votre consentement. Des tiers partenaires ont également recours à des cookies en cas d’affichage de publicités.</p>
+                    <button>refuser</button><button>Paramétrer mes choix</button><button>ACCEPTER</button> 
+                    <!--mettre en évidence le bouton accepter. Mettre peut-être le "refuser" en simple lien tout en haut, et le paramétrer en lien en bas... à voir mais faut favoriser l'acceptation.
+                        les choix refuser ou paramétrer amèneront vers une popupOK. En acceptant, on redirige vers "savez vous ce que vous avez accepté?" => popupKO-->
+                </div>
+                <div class="donnees_cookies_popupOK">
+                    <h4>Félicitations, vous avez eu un bon réflexe !</h4>
+                    <p>Vous avez cliqué sur "Paramétrer mes choix" ou "Tout refuser". Ce choix vous permet de limiter au strict nécessaire les cookies qui seront enregistrés sur votre appareil, et limiter ainsi la transmission de vos données.</p>
+                    <button>Fermer<!--aller à "comment sont récupérées les informations grâce aux cookies"--></button>
+                </div>
+                <div class="donnees_cookies_popupKO">
+                    <h4>Savez vous ce que vous avez accepté ?</h4>
+                    <p>En cliquant sur "Accepter", vous avez autorisé l'enregistrement de tous les cookies sollicités par le site web. Beaucoup de ces cookies ne sont pas essentiels au bon fonctionnement du site et n'ont pour objectif que de récolter des informations sur vous, vos habitudes de navigation, mais également vos habitudes d'achat.</p>
+                    <button>Fermer<!--aller à "comment sont récupérées les informations grâce aux cookies"--></button>
+                </div>
+                
+                <div>
+                    <h4>Comment sont récupérées les informations grâce aux cookies ?</h4>
+                    <p>Un cookie est un petit fichier texte, qui est stocké par un site web sur votre disque dur lors de la navigation. Cela permet principalement au site web que vous visitez de vous "identifier". Ainsi, quand, plusieurs jours après votre visite, vous revenez sur le même site, celui-ci consultera le cookie, et s'il est encore présent sur votre disque dur, le site web lira les informations contenues dans le cookie et vous "reconnaîtra".
+                        Chaque site web a son propre cookie, ce qui multiplie d'autant le nombre de cookies stockés dans votre ordinateur à la fin de la journée.</p>
+                      
+                    <!--Mettre image des données de tes réseaux sociaux (dans fichier de l'équipe OOS de teams je crois)-->
+                        
+                    <p>Les cookies contiennent des données personnalisées de votre compte, de votre ordinateur. Ce sont donc des données sensibles d'un point de vue sécurité. Ils faut donc les considérer comme des données personnelles que personne ne doit obtenir.
+                        
+                    <h5>Vol de cookies</h5>
+                        
+                    <p>Le but du hacker, est donc généralement de voler le cookie de sa victime pour en exploiter le contenu.
+                    En théorie, un cookie associé à un site web ne peut pas être envoyé à un autre site web. Malheureusement, un certain nombre de failles permettent de voler des cookies.</p>
+                    
+                    <h6>Vol par accès physique à la machine</h6>
+                    
+                    <p>Si le hacker a accès physiquement à la machine, rien de plus simple que de récupérer les cookies ! Il va dans le répertoire de stockage en fonction du système d'exploitation et copie les cookies sur un support amovible...</p>
+                    
+                    <p>Les hackers possèdent des logiciels qui leur permettent de prendre la main sur la machine en la réinitialisant (et cela, même s'ils n'ont pas les codes ou les droits d'accès). Ils ont donc très facilement accès aux cookies, et donc à vos données personnelles.</p>
+                    
+                    <h6>Vulnérabilité du navigateur</h6>              
+                    
+                    <p>Le navigateur, de plus en plus compliqué à chaque nouvelle version, comporte un nombre de failles impressionnant. Parmi toutes ces failles, il y en a certaines qui concernent tout particulièrement les cookies. C'est le cas par exemple de la faille "zero-day" dont ont été récemment victime les navigateurs utilisant la base Chromium : Chrome et Microsoft Edge</p>
+
+                    <img src="/assets/img/personnalisation_annonces.png" alt="Personnalisation des annonces">
+                </div>
+            </article>
+
+            <article id="donnees_localisation">
+                <h3>Les données de localisation</h3>
+                <div>
+                    <h4>Comment sont récupérées les informations grâce aux données de localisation</h4>
+                    <p>Le fonctionnement est sensiblement le même que celui des cookies. Lorsque vous utilisez les données de géolocalisation, celles-ci sont enregistrées et peuvent être réutilisées à des fins commerciales (proposer des lieux de consommation à proximité par exemple), touristiques, etc.
+                        //TODO à compléter
+                    </p>
+                    <img src="/assets/img/historique_positions1.png" alt="Historique des positions géographiques">
+                    <img src="/assets/img/historique_positions2.png" alt="Historique des positions géographiques">
+                    <img src="/assets/img/historique_positions3.png" alt="Historique des positions géographiques">
+                    <img src="/assets/img/historique_positions4.png" alt="Historique des positions géographiques">
+                    <img src="/assets/img/historique_positions5.png" alt="Historique des positions géographiques">
+                    <img src="/assets/img/historique_positions6.png" alt="Historique des positions géographiques">
+                </div>
+            </article>
+            
+            <article id="donnees_formulaires">
+                <h3>Les formulaires</h3>
+                <div>
+                    <h4>Comment sont récupérées les informations grâce aux formulaires ?</h4>
+                    <p>Les formulaires sont une manière consentie de récupérer des données personnelles. L'utilisateur remplit de lui-même les informations demandées afin d'obtenir un service en échange (l'inscription à une newsletter, l'adhésion à un forum, la réception d'une commande, ...).
+                        Mais certaines données demandées n'ont aucun intérêt pour le service attendu. Par exemple, pourquoi renseigner une date de naissance lors de l'inscription à une newsletter? Quelle est l'utilité de renseigner la civilité pour passer une commande?
+                        Vous l'aurez compris, les informations renseignées sont stockées, et les professionnels du numérique profitent pour en récupérer le plus possible.
+                    </p>
+                    <p>Certains formulaires demandent l'autorisation d'utiliser les données personnelles à des fins commerciales, sous forme de case à cocher.
+                        Sur la majorité des formulaires, il faut cocher la case pour donner son autorisation, mais cela arrive que les professionnels du numérique tentent de tromper l'utilisateur, via un dark pattern, en demandant de cocher la case pour s'y opposer, ou de cocher la case par défaut.
+                        L'utilisateur habitué à ne pas cocher la case pour ne pas autoriser le site à utiliser ses données personnelles validera ainsi la démarche sans y prendre gare.
+                    </p>
+                    <img src="/assets/img/formulaire.png" alt="formulaire"><!--voir lequel on met, ou si t'en trouves un autre. L'idéal serait d'en avoir un inversé, ou déjà coché-->
+                    <img src="/assets/img/formulaire2.png" alt="formulaire2">
+                </div>
+                
+            </article>
+        </section>
+
+        <section id="preservation" class="px-12 bg-dark-purple py-5">
+            <h2>Comment vous préserver ?</h2>
+
+            <article id="preservation_cookies">
+                <h3>Les cookies</h3>
+                <div>
+                    <p>Comme nous l'avons vu dans la partie "Données", les cookies sont une source importante (voire la principale) de récupération des données personnelles.</p>
+                    <hr>
+                    <p>Pour se protéger de la transmission (ou du vol) d'informations personnelles via les cookies, une bonne pratique est de les refuser, ou de n'accepter que les cookies essentiels en paramétrant votre choix.</p>
+                    <p>Vous pouvez également naviguer en mode privé. Votre activité ne sera pas enregistrée (cela aura l'avantage de bloquer l'enregistrement de votre activité mais l'inconvénient de ralentir la navigation car les pages seront totalement rechargées).</p>
+                    <p>Si vous ne souhaitez pas naviguer en mode privé, vous pouvez limiter l'enregistrement des données en désactivant plusieurs paramètres dans votre navigateur.
+                        Exemple pour google : 
+                        * <a target="blank" href="https://adssettings.google.com/authenticated?hl=fr&ref=my-account">Personnalisation des annonces</a>
+                        * <a target="blank" href="https://myactivity.google.com/product/search?utm_source=help">Gérer l'historique des recherches</a>
+                    </p>
+                </div>
+            </article>
+
+            <article id="preservation_popup">
+                <h3>Les popups</h3>
+                <div>
+                    <p>Parfois, une fenêtre demandant confirmation de la fermeture de la page apparait sur les sites de e-commenrce dans l'intention de vous inciter à rester et à consommer.
+                    <br />
+                    Si vous avez mis des articles dans votre panier, cette notification a pour but de vous le rappeler et potentiellement de vous amener à finaliser un achat que vous ne souhaitiez peut-être plus effectuer. 
+                    L’objectif de cette pop-pup est de vous faire douter sur votre envie de mettre fin à votre visite.
+                    <hr>
+                    En connaissant l'utilité de ces popups, vous pourrez simplement les fermer, sans culpabiliser de quitter un site qui cherche à vous pousser à la consommation.
+                    </p>
+                </div>
+            </article>
+            
+
+            <article id="preservation_url">
+                <h3>Les url</h3>
+                <div>
+                    <p>Dans les moteurs de recherche, il est fréquent que les marques achètent des mots clés correspondants à d'autres marques. De cette manière, leur url apparait en première position, avant celui que vous cherchez à atteindre.
+                    <img src="" alt="image comme j'aime">
+                    <hr>
+                    Il est important de vérifier l'url sur laquelle vous cliquez pour ne pas cliquer sur celle des concurrents.
+                    Pour plus de précautions, vous pouvez également saisir directement l'url dans la barre d'adresse sans passer par un moteur de recherche, cela permet en outre de limiter la récupération des données. En effet, les données de recherche sont des informations importantes qui permettent de connaitre vos centres d'intérêt
+                    </p>
+                </div>
+            </article>
+
+            <article id="preservation_localisation">
+                <h3>La localisation</h3>
+                <div>
+                    <p>Les données de localisation sont une source d'information faciles à récupérer car les utilisateurs n'y prètent pas réellement attention. En effet, 73 % des 18-39 ans activent leur géolocalisation en permanence sur leur mobile.</p>
+                 
+                    <hr>
+                    <p>Pour limiter l'enregistrement des données de localisation, vous pouvez désactiver l'historique de navigation dans votre navigateur.
+                        Par exemple pour google :
+                        * <a target="blank" href="https://support.google.com/accounts/answer/3118687?hl=fr">Gérer l'historique des positions</a>
+                    </p>
+                    
+                    <p>Lors de la navigation, certains sites demandent à accéder à vos données de localisation pour pré remplir des champs de formulaire par exemple. Refuser de donner l'accès à ces données est une protection supplémentaire.</p>
+                    
+                    <p>Enfin, désactiver les données mobiles et la géolocalisation de son téléphone lorsqu'elles ne sont pas nécessaires permet d'éviter de transmettre en continu des informations sur vos activités et déplacements. Cela permet en plus d'augmenter la durée de vie de la batterie !</p>
+                </div>
+            </article>
+
+            <article id="preservation_ergonomie">
+                <h3>L'ergonomie</h3>
+                <div>
+                    <p>Comme nous l'avons évoqué dans la partie captation de l'attention, certains professionnels du numérique utilisent un dark pattern (interface truquée) pour tromper l'utilisateur et l'amener à cliquer sur un autre élément que celui qu'il convoitait.
+                    Par exemple, certains boutons peuvent être inversé par rapport aux "conventions" (bouton "annuler" à gauche et "valider" à droite).
+                    <hr>
+                    Afin de ne pas cliquer à un mauvais endroit, il est nécessaire de prendre le temps de vérifier l’ergonomie (emplacement des boutons par exemple), ou que le contenu ne se décale pas en s'adaptant à l'écran ou autre.
+                    </p>
+                </div>
+            </article>
+
+            <article id="preservation_addblock">
+                <h3>Les bloqueurs de pub</h3>
+                <div>
+                    <p>La publicité permet aux professionnels du numérique de rentabiliser financièrement leur site internet et de leur permettre de couvrir les coûts d'hébergement et de noms de domaine. 
+                       La publicité permet également d'assurer la promotion des services ou produits que proposent les sites web. <br />
+                       Cependant, parfois les publicités sont affichées sur l'écran de manière intempestive, sous forme de popup, ou parfois en ouvrant une nouvelle fenêtre dans le navigateur.
+                       L'ouverture de ces publicités peut amener l'utilisateur à cliquer dessus sans le vouloir.
+                    <hr>
+                    Pour éviter l’apparition de publicités intempestives des bloqueurs de pub peuvent être installés en extension sur les navigateur (par exemple addBlock, total AddBlock, uBlock Origin, etc.)
+                    </p>
+                </div>
+            </article>
+
+            <article id="preservation_sponsoring">
+                <h3>Les annonces sponsorisées</h3>
+                <div>
+                    <p>Sur les sites e-commerce (principalement), certaines annonces sponsorisées se fondent dans le résultat des recherches et vous amènent à sélectionner un produit mis en avant qui ne correspond pas forcément à votre recherche initiale.
+                        Ces annonces ne sont généralement pas prises en compte dans les choix de tri et peuvent tromper l'utilisateur en affichant des produits plus chers en début des résultats de recherche, même si l'utilisateur a trié par ordre croissant de prix par exemple.
+                        <img src="" alt="image amazon">
+                    <hr>
+                    Il est donc important de vérifier les informations (type de produit, prix, autre critère de recherche, ...) avant d’aller plus loin dans l’achat.
+                    </p>
+                </div>
+            </article>
+
+            <article id="preservation_formulaire">
+                <h3>Les formulaires</h3>
+                <div>
+                    <p>Les formulaires sont présents sur de nombreux sites, sous différentes formes, et avec plus ou moins d'informations demandées.</p>
+                    <hr>
+                    <p>Il est nécessaire de veiller aux informations que l'on renseigne, et notamment les cases cochées ou non (accepter la transmission des données à des fins commerciales, par exemple).</p>
+                </div>
+            </article>
+
+            <article id="preservation_appli">
+                <h3>Les applications de contrôle</h3>
+                <div>
+                    <p>Comme nous l'avons vu, il existe de multiples techniques pour garder un utilisateur le plus longtemps possible sur le site et l'amener à consommer.
+                    <hr>
+                    Pour se préserver d'une éventuelle dépendance, il existe des applications qui permettent de contrôler le temps passé sur les supports digitaux. Par exemple, Space (ex BreakFree) permet de déterminer un score de dépendance digitale en analysant votre utilisation du téléphone. Elle vous aide ensuite à réduire ce degré d’addiction en vous avertissant lorsqu’elle détecte une utilisation excessive de votre smartphone. Vous pouvez aussi définir des plages horaires où vous souhaitez vous déconnecter.
+                    </p>
+                </div>
+            </article>
+        </section>
 
     <footer>
         <p class="copyright">© Laura Quatannens & Léa Sagnier / M1 développement 2021-2022</p>
