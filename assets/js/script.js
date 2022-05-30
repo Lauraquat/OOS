@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $('.open-overlay').click(function() {
     var overlay_navigation = $('.overlay-navigation'),
@@ -35,9 +34,7 @@ $(document).ready(function(){
     }
   })
 
-  $("body").click(function(event){
-    setTimeout(sound(), 90000);
-  });
+  setInterval(sound, 20000);
 
 })
 
