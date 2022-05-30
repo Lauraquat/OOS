@@ -110,6 +110,23 @@ body {
 }
 
 /*Menu*/
+#menubar{
+  position: fixed;
+}
+.open-overlay span{
+  z-index: 1;
+}
+.open-overlay::before{
+  content: ' ';
+  background-color: var(--dark-purple);
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.6rem;
+  z-index: -1;
+}
 
 .overlay-navigation {
   position: fixed;

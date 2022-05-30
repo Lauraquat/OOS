@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOS</title>
+    <title>OOS - Les données</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/jqx.base.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -55,13 +55,13 @@
                             centres d’intérêt, sous réserve du recueil de votre consentement. Des tiers partenaires ont
                             également recours à des cookies en cas d’affichage de publicités.</p>
                         <div class="d-flex justify-content-end g-2">
-                            <button class="button2" data-toggle="modal"
-                                data-target="#donnees_cookies_popupOK">Tout refuser</button>
+                            <button class="button2" data-toggle="modal" data-target="#donnees_cookies_popupOK">Tout
+                                refuser</button>
                             <button class="button2" data-toggle="modal"
                                 data-target="#donnees_cookies_popupOK">Paramétrer
                                 mes choix</button>
-                            <button class="button2" data-toggle="modal"
-                                data-target="#donnees_cookies_popupKO">Tout accepter</button>
+                            <button class="button2" data-toggle="modal" data-target="#donnees_cookies_popupKO">Tout
+                                accepter</button>
                         </div>
                     </div>
 
@@ -118,19 +118,26 @@
                     </div>
 
                     <div id="recuperationDonnee">
-                        <h4>Comment sont récupérées les informations grâce aux cookies ?</h4>
                         <div class="d-flex flex-row g-1 align-items-center">
-                            <p class="section-50">Un cookie est un petit fichier texte qui est stocké par un site web
-                                sur votre disque dur lors de la navigation. Cela permet principalement au site web que vous visitez de vous "identifier".
-                                Ainsi, quand, plusieurs jours après votre visite, vous revenez sur le même site, celui-ci consultera le cookie, et s'il est encore présent sur votre disque dur, le site web lira
-                                les informations contenues dans le cookie et vous "reconnaîtra".
-                                Chaque site web a son propre cookie, ce qui multiplie d'autant le nombre de cookies stockés dans votre ordinateur à la fin de la journée.
-                                <br><br>
-                                Les cookies contiennent des données personnalisées de votre compte, de votre ordinateur.
-                                Ce sont donc des données sensibles d'un point de vue sécurité. Ils faut donc les
-                                considérer comme des
-                                données personnelles que personne ne doit obtenir.
-                            </p>
+                            <div class="section-50">
+                                <h4>Comment sont récupérées les informations grâce aux cookies ?</h4>
+                                <p>Un cookie est un petit fichier texte qui est stocké par un site web
+                                    sur votre disque dur lors de la navigation. Cela permet principalement au site web
+                                    que vous visitez de vous "identifier".
+                                    Ainsi, quand, plusieurs jours après votre visite, vous revenez sur le même site,
+                                    celui-ci consultera le cookie, et s'il est encore présent sur votre disque dur, le
+                                    site web lira
+                                    les informations contenues dans le cookie et vous "reconnaîtra".
+                                    Chaque site web a son propre cookie, ce qui multiplie d'autant le nombre de cookies
+                                    stockés dans votre ordinateur à la fin de la journée.
+                                    <br><br>
+                                    Les cookies contiennent des données personnalisées de votre compte, de votre
+                                    ordinateur.
+                                    Ce sont donc des données sensibles d'un point de vue sécurité. Ils faut donc les
+                                    considérer comme des
+                                    données personnelles que personne ne doit obtenir.
+                                </p>
+                            </div>
                             <div class="section-50 d-flex flex-column">
                                 <div class="d-flex flex-row justify-evenly g-1">
                                     <p class="w-45 text-center mb-0">Publication suivie</p>
@@ -145,7 +152,7 @@
                     </div>
                 </article>
             </div>
-            <div class="px-12 py-4 bg-break-white">
+            <div class="px-12 pt-4 bg-break-white">
                 <h5>Vol de cookies</h5>
 
                 <p>Le but du hacker est donc généralement de voler le cookie de sa victime pour en exploiter le
@@ -160,34 +167,41 @@
                     ! Il va dans le répertoire de stockage en fonction du système d'exploitation et copie les
                     cookies sur un support amovible...</p>
 
-                <p>Les hackers possèdent des logiciels qui leur permettent de prendre la main sur la machine en
+                <p class="mb-0">Les hackers possèdent des logiciels qui leur permettent de prendre la main sur la machine en
                     la
                     réinitialisant (et cela, même s'ils n'ont pas les codes ou les droits d'accès). Ils ont donc
                     très facilement accès aux cookies, et donc à vos données personnelles.</p>
-            </div> <!-- PAS DE DIV A FERMER ET A OUVRIR A CET ENDROIT => Vulnérabilité du navigateur est la suite de "vol de cookies" -->
-            <div class="px-12 py-4 bg-dark-purple">
-                <h6>Vulnérabilité du navigateur</h6>
+            </div>
+            <div class="px-12 pb-4 bg-break-white">
                 <div class="d-flex flex-row g-1 align-items-center">
-                    <p class="section-50">Le navigateur, de plus en plus compliqué à chaque nouvelle version,
+                    <div class="section-50">
+                    <h6>Vulnérabilité du navigateur</h6>
+                    <p>Le navigateur, de plus en plus compliqué à chaque nouvelle version,
                         comporte un nombre de failles
                         impressionnant. Parmi toutes ces failles, il y en a certaines qui concernent tout
                         particulièrement les cookies. C'est le cas par exemple de la faille "zero-day" dont ont été
                         récemment victime les navigateurs utilisant la base Chromium : Chrome et Microsoft Edge</p>
-                    <div class="section-50">
-                        <p class="text-center mb-0">Exemple de données récupérées par Google grâce aux cookies</p>
+                    </div>
+                        <div class="section-50">
                         <img class="w-100" src="/assets/img/personnalisation_annonces.png"
                             alt="Personnalisation des annonces">
+                            <p class="text-center mb-0">Exemple de données récupérées par Google grâce aux cookies</p>
+
                     </div>
                 </div>
             </div>
             </article>
         </div>
 
-        <article id="donnees_localisation" class="px-12 py-4 bg-break-white">
+        <article id="donnees_localisation" class="px-12 py-4 bg-dark-purple">
             <h3>Les données de localisation</h3>
             <div>
                 <h4>Comment sont récupérées les informations grâce aux données de localisation ?</h4>
-                <p>Il est possible de déterminer l’emplacement d’un utilisateur en croisant plusieurs informations, telles que son adresse IP et son activité sur Internet. Les données de géolocalisation collectées permettent ainsi aux professionnels du numérique (entre autres) à localiser et comprendre les habitudes d’un consommateur, dans le but de lui proposer des services ou produits correspondant à son emplacement et/ou son style de vie.
+                <p>Il est possible de déterminer l’emplacement d’un utilisateur en croisant plusieurs informations,
+                    telles que son adresse IP et son activité sur Internet. Les données de géolocalisation collectées
+                    permettent ainsi aux professionnels du numérique (entre autres) à localiser et comprendre les
+                    habitudes d’un consommateur, dans le but de lui proposer des services ou produits correspondant à
+                    son emplacement et/ou son style de vie.
                 </p>
                 <div id="carouselExampleIndicators" style="height: 450px;" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -236,7 +250,7 @@
             </div>
         </article>
 
-        <article id="donnees_formulaires" class="px-12 py-4 bg-dark-purple">
+        <article id="donnees_formulaires" class="px-12 py-4 bg-break-white">
             <h3>Les formulaires</h3>
             <div>
                 <h4>Comment sont récupérées les informations grâce aux formulaires ?</h4>

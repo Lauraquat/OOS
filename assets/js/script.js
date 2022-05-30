@@ -20,7 +20,6 @@ $(document).ready(function(){
       nav_item_2.removeClass('slide-in-nav-item-delay-1-reverse').addClass('slide-in-nav-item-delay-1');
       nav_item_3.removeClass('slide-in-nav-item-delay-2-reverse').addClass('slide-in-nav-item-delay-2');
       nav_item_4.removeClass('slide-in-nav-item-delay-3-reverse').addClass('slide-in-nav-item-delay-3');
-      nav_item_5.removeClass('slide-in-nav-item-delay-4-reverse').addClass('slide-in-nav-item-delay-4');
     } else {
       top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
       middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
@@ -30,7 +29,6 @@ $(document).ready(function(){
       nav_item_2.removeClass('slide-in-nav-item-delay-1').addClass('slide-in-nav-item-delay-1-reverse');
       nav_item_3.removeClass('slide-in-nav-item-delay-2').addClass('slide-in-nav-item-delay-2-reverse');
       nav_item_4.removeClass('slide-in-nav-item-delay-3').addClass('slide-in-nav-item-delay-3-reverse');
-      nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
     }
   })
 
@@ -106,3 +104,7 @@ function closecookieMessage(){
 $('.carousel').carousel({
   interval: false,
 });
+
+// window.onbeforeunload = function() {
+//   return "Le son de votre ordinateur etait-t'il activer lors de votre navigation ? Si oui, est ce que vous n'avez pas été perturbé par les sons de notifications tout le long de votre visite ?"
+// }
