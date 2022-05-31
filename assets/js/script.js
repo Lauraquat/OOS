@@ -64,7 +64,7 @@ function hoverModeleFlipper() {
 }
 
 
-// Cookie Law 
+
 function setCookie(cookieName, cookieValue, numdaystilexpireasinteger) {
   var d = new Date();
   d.setTime(d.getTime() + (numdaystilexpireasinteger * 24 * 60 * 60 * 1000));
@@ -91,7 +91,7 @@ function getCookie(cookieName) {
 
 
 function showLaw() {
-  var x = getCookie("cookieName");  //call cookie to get its value
+  var x = getCookie("cookieName");
   if (x != "") {
     $("#messagecookies").remove();
   } else {
@@ -100,7 +100,6 @@ function showLaw() {
 }
 
 
-// Show cookies pop up
 var message = 0;
 function showCookiesBock() {
   if (message == 0) {
@@ -127,6 +126,7 @@ var $presAppli = $('#preservation_sponsoring').hover(
     }
   }
 );
+
 
 function messagesoundClose() {
   document.getElementById('messageSon').classList.add('d-none');

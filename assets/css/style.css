@@ -26,6 +26,7 @@ body {
     background-color: var(--break-white);
     color: var(--dark-purple);
 }
+
 h3{
   font-family: 'Plus Jakarta Sans', sans-serif ;
   font-size: 2rem;
@@ -39,6 +40,7 @@ h3{
 .g-1{
   gap:5%;
 }
+
 .g-2{
   gap:1%
 }
@@ -52,14 +54,17 @@ h3{
     filter: grayscale(1);
     background-color: var(--break-white);
 }
+
 .textTrombi{
     margin-bottom:0;
     padding: 2rem;
 }
+
 .cartTrombi{
     width: 30%;
     border-radius: 15px;
 }
+
 #buttonIndex{
     display: flex;
     padding: 0.5rem 1.5rem;
@@ -81,6 +86,7 @@ h3{
     top: 10%;
     left: 5%;
 }
+
 .illu::before{
     content:url(/assets/img/illu1.svg);
     transform: rotate(180deg);
@@ -96,10 +102,12 @@ h3{
     display: flex;
     margin: auto;
 }
+
 #sujet{
     padding: 1.5rem 5rem;
     border-radius: 15px;
 }
+
 #theme{
     border-radius: 15px;
     border: 0.5rem solid var(--dark-purple);
@@ -111,6 +119,7 @@ h3{
     text-align: center;
     margin-bottom: 0;
 }
+
 #menu a:hover{
     color: white !important;
     text-decoration: none !important; 
@@ -120,9 +129,11 @@ h3{
 #menubar{
   position: fixed;
 }
+
 .open-overlay span{
   z-index: 1;
 }
+
 .open-overlay::before{
   content: ' ';
   background-color: var(--dark-purple);
@@ -459,6 +470,7 @@ Animation keyframes
     background-color: #ffffff;
   }
 }
+
 .home a{
   font-family: "Work Sans", sans-serif;
   color: #fff;
@@ -473,6 +485,7 @@ Animation keyframes
   padding-bottom: 3px;
   border-bottom: 1px solid #fff;
 }
+
 @media (max-width: 640px) {
   nav ul li a {
     font-size: 11px;
@@ -487,16 +500,16 @@ Animation keyframes
     width: 15px;
   }
 }
-/*Design part*/
 
+/*Design part*/
 .design-img{
   width: 100%;
   height: auto;
 }
 .section p{
   padding: 1rem;
-  /* border: 1px solid transparent; */
 }
+
 .section{
   display: flex;
   flex-direction: row;
@@ -512,21 +525,26 @@ Animation keyframes
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 #text-design{
   display: flex;
   flex-direction: column;
 }
+
 .contourBlock{
   border: var(--dark-purple) solid 1px;
   order:0;
 }
+
 .contourBlock2{
   border: transparent solid 1px;
   order:1;
 }
+
 .contourBlock2:hover{
   border: var(--dark-purple) solid 1px;
 }
+
 .contourBlock3{
   border: transparent solid 1px;
   order:2;
@@ -553,7 +571,6 @@ Animation keyframes
 
 
 /*Color part*/
-
 #colors img{
   width: 100%;
 }
@@ -589,6 +606,7 @@ Animation keyframes
   border: solid 1px var(--break-white);
   border-radius: 10px;
 }
+
 .button:hover{
   color: var(--dark-purple) !important;
   border: solid 1px var(--dark-purple);
@@ -608,6 +626,7 @@ Animation keyframes
   justify-content: center;
   width: 60%;
 }
+
 .alert-popup{
   background-color: var(--break-white);
   margin: 2rem;
@@ -634,6 +653,7 @@ Animation keyframes
   border: solid 1px var(--break-white);
   color: var(--break-white);
 }
+
 .button3{
   padding: 0.3rem 0.7rem ;
   font-size: 1.1rem;
@@ -642,13 +662,12 @@ Animation keyframes
   background-color: var(--dark-purple);
   border: solid 1px var(--dark-purple);
   color: var(--break-white);
-
 }
+
 .button3:hover{
   border: solid 1px var(--dark-purple);
   background-color: var(--break-white);
   color: var(--dark-purple);
-
 }
 
 #messagecookies,
@@ -659,6 +678,7 @@ Animation keyframes
 .carousel-item img{
   height: 400px;
 }
+
 .w-45{
   width: 47.5%;
 }
@@ -666,9 +686,11 @@ Animation keyframes
 #carouselExampleIndicators{
   background: var(--dark-purple);
 }
+
 .g-4{
   gap: 10px;
 }
+
 #messageSon{
   color: var(--dark-purple);
   position: fixed;
