@@ -1,0 +1,1 @@
+Le site se lance à partir du fichier index.html
