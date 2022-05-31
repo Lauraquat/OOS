@@ -26,9 +26,10 @@ body {
     background-color: var(--break-white);
     color: var(--dark-purple);
 }
-.font-title{
+h3{
   font-family: 'Plus Jakarta Sans', sans-serif ;
   font-size: 2rem;
+  padding-bottom:1rem;
 }
 
 .px-12{
