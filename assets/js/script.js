@@ -32,22 +32,32 @@ $(document).ready(function () {
     }
   })
 
+
+  $('.carousel').carousel({
+    interval: false,
+  });
+
+
   setInterval(sound, 45000);
 
 })
+
 
 function sound() {
   var audio = new Audio('./assets/sound/WhatsApp Sound Original Message.mp3');
   audio.play();
 }
 
+
 function hoverModeleDefault() {
   document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_tondeuse.png)';
 }
 
+
 function hoverModeleF() {
   document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_f.png)';
 }
+
 
 function hoverModeleFlipper() {
   document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_flipper.png)';
@@ -55,13 +65,13 @@ function hoverModeleFlipper() {
 
 
 // Cookie Law 
-
 function setCookie(cookieName, cookieValue, numdaystilexpireasinteger) {
   var d = new Date();
   d.setTime(d.getTime() + (numdaystilexpireasinteger * 24 * 60 * 60 * 1000));
   var expires = "expires=" + d.toUTCString();
   document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
 }
+
 
 function getCookie(cookieName) {
   var name = cookieName + "=";
@@ -79,6 +89,7 @@ function getCookie(cookieName) {
   return "";
 }
 
+
 function showLaw() {
   var x = getCookie("cookieName");  //call cookie to get its value
   if (x != "") {
@@ -87,6 +98,7 @@ function showLaw() {
     setCookie("cookieName", "cookieValue", 2);
   }
 }
+
 
 // Show cookies pop up
 var message = 0;
@@ -97,16 +109,14 @@ function showCookiesBock() {
   }
 }
 
+
 function closecookieMessage() {
   document.getElementById('messagecookies').classList.add('d-none')
 }
 
-$('.carousel').carousel({
-  interval: false,
-});
 
 var soundmessage = 0;
-var $presAppli = $('#preservation_appli').hover(
+var $presAppli = $('#preservation_sponsoring').hover(
   function () {
     if (soundmessage == 0) {
       var self = '#messageSon';

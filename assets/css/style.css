@@ -517,7 +517,7 @@ Animation keyframes
   flex-direction: column;
 }
 .contourBlock{
-  border: #fff solid 1px;
+  border: var(--dark-purple) solid 1px;
   order:0;
 }
 .contourBlock2{
@@ -525,7 +525,7 @@ Animation keyframes
   order:1;
 }
 .contourBlock2:hover{
-  border: #fff solid 1px;
+  border: var(--dark-purple) solid 1px;
 }
 .contourBlock3{
   border: transparent solid 1px;
@@ -533,7 +533,7 @@ Animation keyframes
 }
 
 .contourBlock3:hover{
-  border: #fff solid 1px;
+  border: var(--dark-purple) solid 1px;
 }
 
 .contourBlock2:hover ~ .contourBlock, .contourBlock3:hover ~ .contourBlock{
