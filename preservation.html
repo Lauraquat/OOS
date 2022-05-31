@@ -79,7 +79,7 @@
         </div>
 
         <div class="bg-break-white py-4 px-12">
-            <article id="preservation_popup" >
+            <article id="preservation_popup">
                 <h3>Les popups</h3>
                 <div>
                     <p>Parfois, une fenêtre demandant confirmation de la fermeture de la page apparait sur les sites de
@@ -197,12 +197,13 @@
         </article>
 
         <article id="preservation_sponsoring" class="bg-dark-purple py-4 px-12">
-           
+
             <div class="d-flex flex-row g-1 align-items-center">
                 <div class="section-50">
                     <h3>Les annonces sponsorisées</h3>
                     <p>Sur les sites e-commerce (principalement), certaines annonces sponsorisées se fondent dans le
-                        résultat des recherches et vous amènent à sélectionner un produit mis en avant qui ne correspond pas
+                        résultat des recherches et vous amènent à sélectionner un produit mis en avant qui ne correspond
+                        pas
                         forcément à votre recherche initiale.
                         Ces annonces ne sont généralement pas prises en compte dans les choix de tri et peuvent tromper
                         l'utilisateur en affichant des produits plus chers en début des résultats de recherche, même si
@@ -212,11 +213,11 @@
                         Il est donc important de vérifier les informations (type de produit, prix, autre critère de
                         recherche, ...) avant d’aller plus loin dans l’achat.
                     </p>
-                </div> 
+                </div>
                 <div class="section-50">
                     <img class="w-75" src="/assets/img/amazonsponsor.png" alt="image amazon">
                 </div>
-               
+
             </div>
         </article>
 
@@ -247,6 +248,29 @@
                     déconnecter.
                 </p>
             </div>
+
+            <div id="messageSon" class="alert-dismissible h6 fade show d-none" role="alert">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="messagesoundClose()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+               <h4> Nous vous remercions pour votre attention !</h4>
+
+                <p> Mais au fait, votre son était-il activé durant votre visite ? 
+                </p>
+                <p> 
+                    Si oui , n'avez vous pas été perturbé par des sons de notification ? <br>
+                    Il s'agissait d'une dernière démonstration de notre projet : notre attention est également captée par toutes ces notifications,
+                    que ce soit sur mobile avec les réseaux sociaux, par exemple, ou sur desktop avec des popups ou des publicités intempestives.
+                </p>
+                <p> 
+                    Pour rester concentrer sur l'objectif de votre visite d'un site, n'hésitez pas à couper le son, et à bloquer les publicités.
+                </p>
+            </div>
+
+            <button class="button2 mt-5" onclick="window.location.href = '/donnees.html'">Retourner à la page 'Les
+                données'</button><br>
+            <button class="button2 mt-2" onclick="window.location.href = '/captation.html'">Retourner à la page 'La
+                captation'</button>
         </article>
     </section>
 

@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  $('.open-overlay').click(function() {
+$(document).ready(function () {
+  $('.open-overlay').click(function () {
     var overlay_navigation = $('.overlay-navigation'),
       nav_item_1 = $('nav li:nth-of-type(1)'),
       nav_item_2 = $('nav li:nth-of-type(2)'),
@@ -8,10 +8,10 @@ $(document).ready(function(){
       top_bar = $('.bar-top'),
       middle_bar = $('.bar-middle'),
       bottom_bar = $('.bar-bottom');
-  
+
     overlay_navigation.toggleClass('overlay-active');
     if (overlay_navigation.hasClass('overlay-active')) {
-  
+
       top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
       middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
       bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
@@ -32,25 +32,25 @@ $(document).ready(function(){
     }
   })
 
-  setInterval(sound, 20000);
+  setInterval(sound, 45000);
 
 })
 
-function sound(){
+function sound() {
   var audio = new Audio('./assets/sound/WhatsApp Sound Original Message.mp3');
   audio.play();
 }
 
-function hoverModeleDefault(){
-  document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_tondeuse.png)';
+function hoverModeleDefault() {
+  document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_tondeuse.png)';
 }
 
-function hoverModeleF(){
-  document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_f.png)';
+function hoverModeleF() {
+  document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_f.png)';
 }
 
-function hoverModeleFlipper(){
-  document.getElementById('design-img-block').style.backgroundImage='url(/assets/img/modele_flipper.png)';
+function hoverModeleFlipper() {
+  document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_flipper.png)';
 }
 
 
@@ -58,23 +58,23 @@ function hoverModeleFlipper(){
 
 function setCookie(cookieName, cookieValue, numdaystilexpireasinteger) {
   var d = new Date();
-  d.setTime(d.getTime() + (numdaystilexpireasinteger*24*60*60*1000));
-  var expires = "expires="+ d.toUTCString();
-  document.cookie = cookieName+ "=" + cookieValue + ";" + expires + ";path=/";
+  d.setTime(d.getTime() + (numdaystilexpireasinteger * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
 }
 
 function getCookie(cookieName) {
-  var name = cookieName+ "=";
+  var name = cookieName + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
   var ca = decodedCookie.split(';');
-  for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-      }
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
   }
   return "";
 }
@@ -82,22 +82,22 @@ function getCookie(cookieName) {
 function showLaw() {
   var x = getCookie("cookieName");  //call cookie to get its value
   if (x != "") {
-      $("#messagecookies").remove();
+    $("#messagecookies").remove();
   } else {
-          setCookie("cookieName", "cookieValue", 2);
-      }
-  }
-
-// Show cookies pop up
-var message = 0; 
-function showCookiesBock(){
-  if (message == 0) {
-        document.getElementById('messagecookies').classList.remove('d-none');
-        message = 1;
+    setCookie("cookieName", "cookieValue", 2);
   }
 }
 
-function closecookieMessage(){
+// Show cookies pop up
+var message = 0;
+function showCookiesBock() {
+  if (message == 0) {
+    document.getElementById('messagecookies').classList.remove('d-none');
+    message = 1;
+  }
+}
+
+function closecookieMessage() {
   document.getElementById('messagecookies').classList.add('d-none')
 }
 
@@ -105,6 +105,19 @@ $('.carousel').carousel({
   interval: false,
 });
 
-// window.onbeforeunload = function() {
-//   return "Le son de votre ordinateur etait-t'il activer lors de votre navigation ? Si oui, est ce que vous n'avez pas été perturbé par les sons de notifications tout le long de votre visite ?"
-// }
+var soundmessage = 0;
+var $presAppli = $('#preservation_appli').hover(
+  function () {
+    if (soundmessage == 0) {
+      var self = '#messageSon';
+      hovertimer = setTimeout(function () {
+        $(self).removeClass('d-none');
+      }, 30000);
+      soundmessage = 1;
+    }
+  }
+);
+
+function messagesoundClose() {
+  document.getElementById('messageSon').classList.add('d-none');
+}
