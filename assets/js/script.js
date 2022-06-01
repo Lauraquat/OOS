@@ -50,17 +50,17 @@ function sound() {
 
 
 function hoverModeleDefault() {
-  document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_tondeuse.png)';
+  document.getElementById('design-img-block').style.backgroundImage = 'url(./assets/img/modele_tondeuse.png)';
 }
 
 
 function hoverModeleF() {
-  document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_f.png)';
+  document.getElementById('design-img-block').style.backgroundImage = 'url(./assets/img/modele_f.png)';
 }
 
 
 function hoverModeleFlipper() {
-  document.getElementById('design-img-block').style.backgroundImage = 'url(/assets/img/modele_flipper.png)';
+  document.getElementById('design-img-block').style.backgroundImage = 'url(./assets/img/modele_flipper.png)';
 }
 
 

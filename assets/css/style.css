@@ -80,7 +80,7 @@ h3{
 }
 
 .illu::after{
-    content:url(/assets/img/illu1.svg);
+    content:url(../img/illu1.svg);
     position: absolute;
     width: 5rem;
     top: 10%;
@@ -88,7 +88,7 @@ h3{
 }
 
 .illu::before{
-    content:url(/assets/img/illu1.svg);
+    content:url(../img/illu1.svg);
     transform: rotate(180deg);
     position: absolute;
     width: 5rem;
@@ -520,12 +520,6 @@ Animation keyframes
   width: 47.5%;
 }
 
-#design-img-block{
-  background-image: url(/assets/img/modele_tondeuse.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 #text-design{
   display: flex;
   flex-direction: column;
@@ -559,12 +553,7 @@ Animation keyframes
 }
 
 #design-img-block{
-  position: relative;
-  display: inline-block;
-}
-
-#design-img-block{
-  background-image: url(/assets/img/modele_tondeuse.png);
+  background-image: url(../img/modele_tondeuse.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
